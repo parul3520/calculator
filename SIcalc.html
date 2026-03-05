@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 100%;
+    height: 677px;
+    border: 1px solid;
+    background-color: rgb(133, 205, 231);
+}
+.box h1{
+    text-align: center;
+    color: rgb(10, 102, 102);
+}
+.calc{
+    text-align: center;
+    border: 1px solid;
+    width: 30%;
+    height: 400px;
+    margin: auto;
+    margin-top: 9%;
+    background-color: lightblue;
+}
+.calc input{
+    box-shadow: 1px 1px 5px lightblue;
+    border: 0px;
+    background-color: rgb(107, 193, 221);
+    height: 25px;
+    width: 35%;
+    text-align: center;
+    margin-left: 5%;
+}
+button{
+    height: 35px;
+    width: 30%;
+    font-size: 25px;
+    color:  rgb(10, 102, 102);
+    background-color: rgb(197, 231, 242);
+    box-shadow: 1px 1px 10px;
+    border-radius: 0px;
+}
+.calc label{
+    font-size: 20px;
+}
+
+</style>
+
+    
+</head>
+<body>
+    <section class="box">
+    <div class="calc">
+     <h1> SI Calculator</h1><br><br><br>
+    <label for="">Principal</label>
+    <input type="number" id="num"><br><br>
+    <label for="">Rate</label>
+    <input type="number" id="rate"><br><br>
+    <label for="">Time</label>
+    <input type="number" id="time"><br><br><br><br>
+     
+    <button type="button" onclick="calc()">calc</button> <br>
+
+    <h1 id="intro"></h1>
+    </div>
+    </section>
+
+<script src="SI.js"></script>
+
+</body>
+</html>
